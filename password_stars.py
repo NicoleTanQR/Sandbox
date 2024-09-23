@@ -1,6 +1,6 @@
-minimum_length = int(input("Password minimum length: "))
+MINIMUM_LENGTH = 7
 password = input("Password: ")
-while len(password) < minimum_length:
-    print(f"Password needs to be at least {minimum_length} characters long")
+while len(password) < MINIMUM_LENGTH:
+    print(f"Password needs to be at least {MINIMUM_LENGTH} characters long")
     password = input("Password: ")
 print("*" * len(password))
